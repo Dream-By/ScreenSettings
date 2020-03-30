@@ -12,14 +12,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:layout_editor_absoluteX="0dp" android:id="@+id/button" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.77"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.071"
             android:onClick="OnClick"/>
     <TextView
-            android:text="TextView"
+            android:text="Яркость экрана"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:layout_editor_absoluteX="181dp" android:id="@+id/textViewInfo"
+            tools:layout_editor_absoluteX="0dp" android:id="@+id/textViewInfo"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toTopOf="@+id/button"
-            android:textSize="14sp"/>
+            android:textSize="14sp" app:layout_constraintVertical_bias="0.147"/>
+    <TextView
+            android:text="DisplayMetrics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="0dp" android:id="@+id/textView"
+            app:layout_constraintTop_toTopOf="@+id/textViewInfo" android:layout_marginTop="128dp"/>
+    <Button
+            android:text="DisplayMetrics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="161dp" android:id="@+id/button2"
+            android:onClick="OnDisplay"
+            app:layout_constraintTop_toBottomOf="@+id/textView" android:layout_marginTop="40dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
